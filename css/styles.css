@@ -337,8 +337,11 @@ em { font-style: italic; color: var(--text); }
 /* =========================================================
    ABOUT
    ========================================================= */
-.about__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.about__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+.about__media { position: sticky; top: 100px; }
+.about-video { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); display: block; }
 .about__copy p { color: var(--text-dim); margin-bottom: 1em; font-size: 1.05rem; max-width: 56ch; text-transform: none; }
+.about__copy strong { color: var(--text); }
 .creds { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
 .creds li { position: relative; padding-left: 26px; color: var(--text); }
 .creds li::before { content: ""; position: absolute; left: 0; top: 9px; width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }
@@ -420,7 +423,8 @@ em { font-style: italic; color: var(--text); }
   .coaching__head, .coaching__body { grid-template-columns: 1fr; }
   .fortwo { grid-template-columns: 1fr; }
   .about__grid { grid-template-columns: 1fr; }
-  .about .img-slot--about { max-width: 380px; }
+  .about__media { position: static; max-width: 380px; }
+  .about-video { aspect-ratio: 4/5; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .transforms { grid-template-columns: 1fr; max-width: 360px; margin-inline: auto; }
   .testimonials { grid-template-columns: 1fr; }
