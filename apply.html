@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply · Darius Osanlou</title>
+  <meta name="description" content="Apply for 1:1 online coaching with Darius Osanlou. Limited, application-only spots." />
+  <link rel="canonical" href="https://www.dariusosanlou.com/apply.html" />
+  <meta name="theme-color" content="#0b0b0d" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">DARIUS<span class="nav__logo-sub">OSANLOU · MSc</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="method.html">The Method</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="results.html">Results</a>
+        <a href="about.html">About</a>
+        <a href="apply.html" class="btn btn--sm nav__cta" aria-current="page">Apply now</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner reveal">
+        <p class="section__kicker">Apply</p>
+        <h1>Let's get started.</h1>
+      </div>
+      <p class="page-hero__lead reveal" style="margin-top:18px;">Coaching is 1:1 and application-only, so spots are limited. Tell me a little about you and I'll be in touch about whether we're a fit.</p>
+    </div>
+  </section>
+
+  <!-- APPLY FORM -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="applyform">
+        <div class="applyform__intro reveal">
+          <p>This isn't a hard sell. The application just helps me understand where you're at, so our first conversation is useful instead of generic.</p>
+          <p>Prefer email? Reach me at <a class="accent" href="#" data-todo="email">[email address]</a>.</p>
+          <p>Or find me on <a class="accent" href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener">Instagram</a>.</p>
+        </div>
+
+        <!-- TODO: wire to a real handler (Formspree / Netlify Forms / Typeform redirect) -->
+        <form class="applyform__form reveal" action="#" method="post" data-todo="form-handler">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="goal">What do you want to change?</label>
+            <textarea id="goal" name="goal" placeholder="Where you're at now and where you want to get to" required></textarea>
+          </div>
+          <div class="field">
+            <label for="blocker">What's stopped you before?</label>
+            <textarea id="blocker" name="blocker" placeholder="Be honest, this is the useful part"></textarea>
+          </div>
+          <div class="field">
+            <label for="ready">How ready are you to start?</label>
+            <select id="ready" name="ready">
+              <option value="now">Ready now</option>
+              <option value="soon">Within a month</option>
+              <option value="exploring">Just exploring</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--lg" style="width:100%;">Send application</button>
+          <p class="form-note">By submitting, you agree for Darius to contact you about coaching. No spam, ever.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">DARIUS OSANLOU<span>Body Psychologist &amp; Online Coach</span></div>
+      <nav class="footer__links">
+        <a href="method.html">The Method</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="results.html">Results</a>
+        <a href="about.html">About</a>
+        <a href="apply.html">Apply</a>
+        <a href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener">Instagram ↗</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> Darius Osanlou. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

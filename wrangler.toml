@@ -1,0 +1,5 @@
+# Cloudflare Pages: Darius Osanlou site
+# Deploy (direct upload):  npx wrangler pages deploy . --project-name=darius-osanlou --branch=main
+name = "darius-osanlou"
+compatibility_date = "2026-06-09"
+pages_build_output_dir = "."

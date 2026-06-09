@@ -1,0 +1,8 @@
+# Google Drive litter (breaks git checkout/merge on the Drive mount)
+desktop.ini
+**/desktop.ini
+.DS_Store
+
+# Dependencies / build
+node_modules/
+.wrangler/
