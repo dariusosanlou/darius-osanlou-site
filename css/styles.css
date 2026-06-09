@@ -342,6 +342,8 @@ em { font-style: italic; color: var(--text); }
 .about-video { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); display: block; }
 .about__copy p { color: var(--text-dim); margin-bottom: 1em; font-size: 1.05rem; max-width: 56ch; text-transform: none; }
 .about__copy strong { color: var(--text); }
+.about__liam { border-left: 3px solid var(--accent); padding-left: 20px; margin: 1.6em 0; }
+.about__liam p { color: var(--text); }
 .creds { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
 .creds li { position: relative; padding-left: 26px; color: var(--text); }
 .creds li::before { content: ""; position: absolute; left: 0; top: 9px; width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }
