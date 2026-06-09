@@ -4,3 +4,11 @@ compatibility_date = "2026-06-09"
 
 [assets]
 directory = "."
+
+[[routes]]
+pattern = "dariusosanlou.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.dariusosanlou.com"
+custom_domain = true
