@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <link rel="stylesheet" href="css/styles.css?v=12" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -102,7 +102,12 @@
 
   <!-- HERO -->
   <section class="hero" id="top">
-    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__bg" aria-hidden="true">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="assets/about.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__video-overlay"></div>
+    </div>
     <div class="container hero__inner">
       <div class="hero__copy reveal">
         <p class="eyebrow"><span class="eyebrow__dot"></span>MSc Body Psychologist · Online 1:1 Coaching</p>
@@ -123,9 +128,7 @@
         </ul>
       </div>
       <div class="hero__media reveal">
-        <div class="img-slot img-slot--hero" data-file="assets/hero.jpg">
-          <span class="img-slot__label">Hero photo of Darius<br /><code>assets/hero.jpg</code></span>
-        </div>
+        <img src="assets/coaching-portrait.jpg" alt="Darius Osanlou, Body Psychologist and Online Coach" class="hero__portrait" />
       </div>
     </div>
     <a href="#problem" class="hero__scroll" aria-label="Scroll down">Scroll</a>
@@ -167,6 +170,15 @@
     </div>
   </section>
 
+  <!-- PULL QUOTE -->
+  <section class="pull-quote">
+    <div class="container">
+      <!-- Replace this quote with your best client testimonial - one or two sentences, specific and human -->
+      <p class="pull-quote__text">"I'd been going in circles for years. This was the first time someone looked at what was actually causing it."</p>
+      <p class="pull-quote__attr">Client, 8 months</p>
+    </div>
+  </section>
+
   <!-- METHOD TEASER -->
   <section class="section" style="background:linear-gradient(180deg,var(--bg),var(--bg-2));">
     <div class="container">
@@ -183,20 +195,33 @@
     </div>
   </section>
 
-  <!-- COACHING HIGHLIGHT -->
-  <section class="section" id="coaching">
-    <div class="container coaching__head">
-      <div class="reveal">
-        <p class="section__kicker">The Offer</p>
-        <h2 class="section__title">1:1 online coaching<span class="grad">.</span></h2>
-        <p class="section__intro">Application-only, fully bespoke coaching for people who are done starting over. We work together on your training, your nutrition and the psychology driving both.</p>
-        <div style="margin-top:30px;"><a href="coaching.html" class="btn btn--lg">See how it works</a></div>
+  <!-- SERVICES SPLIT -->
+  <div class="services-split" id="coaching" aria-label="Services">
+
+    <a href="coaching.html" class="service-card">
+      <div class="service-card__bg" style="background-image:url('assets/coaching-band.jpg');"></div>
+      <div class="service-card__overlay"></div>
+      <div class="service-card__content">
+        <span class="service-card__kicker">1:1 Online Coaching</span>
+        <h2 class="service-card__title">Fix the mind.<br />Change the body.</h2>
+        <p class="service-card__desc">Application-only, fully bespoke coaching built on psychology, training and nutrition working together.</p>
+        <span class="service-card__cta">See how it works <span aria-hidden="true">→</span></span>
       </div>
-      <div class="img-slot img-slot--coaching reveal" data-file="assets/coaching.jpg">
-        <span class="img-slot__label">Training / lifestyle shot<br /><code>assets/coaching.jpg</code></span>
+    </a>
+
+    <a href="nutrition-coaching.html" class="service-card">
+      <!-- Replace about-band.jpg with a food or nutrition lifestyle photo when available -->
+      <div class="service-card__bg" style="background-image:url('assets/about-band.jpg'); background-position: center 30%;"></div>
+      <div class="service-card__overlay"></div>
+      <div class="service-card__content">
+        <span class="service-card__kicker">Nutrition Coaching</span>
+        <h2 class="service-card__title">Eat for your<br />actual life.</h2>
+        <p class="service-card__desc">No banned foods. No meal plans that fall apart the moment your week gets busy. Nutrition that works in the real world.</p>
+        <span class="service-card__cta">Learn more <span aria-hidden="true">→</span></span>
       </div>
-    </div>
-  </section>
+    </a>
+
+  </div>
 
   <!-- RESULTS TEASER -->
   <section class="section section--tight" style="background:var(--bg-2);">
@@ -216,14 +241,14 @@
   <!-- ABOUT TEASER -->
   <section class="section">
     <div class="container about__grid">
-      <div class="img-slot img-slot--about reveal" data-file="assets/about.jpg">
-        <span class="img-slot__label">Portrait of Darius<br /><code>assets/about.jpg</code></span>
+      <div class="about__media reveal">
+        <img src="assets/coaching-portrait.jpg" alt="Darius Osanlou" class="about-video" style="aspect-ratio:4/5; object-fit:cover; object-position:center top;" />
       </div>
       <div class="about__copy reveal">
         <p class="section__kicker">About</p>
         <h2 class="section__title">Meet Darius<span class="grad">.</span></h2>
-        <p><em>[Draft, replace with Darius's real story.]</em> I didn't come to this from a place of having it all figured out. I came to it because I lived the cycle myself, and got obsessed with the science of why we sabotage the bodies we say we want.</p>
-        <p>That obsession became an MSc and a coaching practice built on one idea: change the psychology, and the body follows.</p>
+        <p>Four years in the NHS taught me that struggling people rarely lack information. They lack the right kind of support for what's actually going on underneath. The pattern was the same across hundreds of cases: people who understood their situation clearly, knew what would help, and couldn't close the gap between knowing and doing.</p>
+        <p>I left to build something around that insight. An MSc in Affective Disorders at King's College London, nine years of coaching, and one bodybuilding competition later, that became Body Psychology.</p>
         <div style="margin-top:24px;"><a href="about.html" class="btn btn--ghost">More about Darius <span aria-hidden="true">→</span></a></div>
       </div>
     </div>
