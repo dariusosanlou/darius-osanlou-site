@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <link rel="stylesheet" href="css/styles.css?v=11" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBSDD0F71P"></script>
   <script>
@@ -52,7 +52,38 @@
         <p class="section__kicker">Apply</p>
         <h1>Let's get started.</h1>
       </div>
-      <p class="page-hero__lead reveal" style="margin-top:18px;">Coaching is 1:1 and application-only, so spots are limited. Tell me a little about you and I'll be in touch about whether we're a fit.</p>
+      <p class="page-hero__lead reveal" style="margin-top:18px;">If you've been putting this off, you already know the longer you wait, the harder it gets. The application is short. There's no pressure on the other end.</p>
+    </div>
+  </section>
+
+  <!-- PRE-FORM COPY -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="problem__lead reveal" style="max-width:62ch;">
+
+        <p>Most people who land on this page are somewhere between frustrated and fed up. They know what they should be doing. They've tried it before. It hasn't stuck. And somewhere along the way they've started wondering if maybe it just isn't going to happen for them.</p>
+
+        <p>It's not a great place to be. And the longer it continues, the more evidence your brain files away that change isn't possible for you specifically. That's not a mindset problem. It's a pattern that needs interrupting.</p>
+
+        <h2 style="font-family:var(--display); font-weight:800; font-size:1.3rem; margin: 2rem 0 1rem;">Three things usually stop people from hitting submit.</h2>
+
+        <p><strong>Whether it will actually work.</strong> The <a href="results.html" class="accent">results page</a> exists for exactly that question.</p>
+
+        <p><strong>Whether I'm worth trusting.</strong> <a href="about.html" class="accent">Read about me</a> — my background, why I coach this way, and what I've put into building this.</p>
+
+        <p><strong>Whether they can afford it.</strong> Coaching is application-only. Reach out and we'll have that conversation honestly.</p>
+
+        <h2 style="font-family:var(--display); font-weight:800; font-size:1.3rem; margin: 2rem 0 1rem;">If you've been sitting on this for a while.</h2>
+
+        <p>The thing you're waiting for isn't more information or a better time. The longer you put it off, the worse the problem becomes. There's no escaping it. Don't worry about being perfect before you apply. Just worry about getting started. We'll figure things out together, and you'll have my support the whole way. You don't have to face any of it alone.</p>
+
+        <h2 style="font-family:var(--display); font-weight:800; font-size:1.3rem; margin: 2rem 0 1rem;">What happens after you apply.</h2>
+
+        <p>I'll read your application and be in touch as soon as possible. If it looks like a good fit, we'll arrange a call — roughly 20 to 30 minutes. No pitch, no pressure. We'll talk about what's brought you here, what you're currently looking for, and I'll take some history so I can start building a picture of what a plan might look like for you. From there, we both decide if it makes sense to move forward.</p>
+
+        <p>I work with a small number of clients at a time. I'm not looking to fill spots for the sake of it. I want it to be right, and I want you to be genuinely ready to do the work.</p>
+
+      </div>
     </div>
   </section>
 
@@ -61,12 +92,13 @@
     <div class="container">
       <div class="applyform">
         <div class="applyform__intro reveal">
-          <p>This isn't a hard sell. The application just helps me understand where you're at, so our first conversation is useful instead of generic.</p>
-          <p>Or find me on <a class="accent" href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener">Instagram</a>.</p>
+          <p>A few short questions so our first conversation is useful rather than generic. Takes about two minutes.</p>
+          <p>Prefer to reach out directly? Find me on <a class="accent" href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener">Instagram</a>.</p>
         </div>
 
-        <!-- TODO: wire to a real handler (Formspree / Netlify Forms / Typeform redirect) -->
-        <form class="applyform__form reveal" action="#" method="post" data-todo="form-handler">
+        <form class="applyform__form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New coaching application — dariusosanlou.com" />
+          <input type="hidden" name="_next" value="https://www.dariusosanlou.com/" />
           <div class="field">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" autocomplete="name" required />
