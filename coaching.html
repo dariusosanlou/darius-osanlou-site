@@ -183,8 +183,12 @@
   </section>
 
   <!-- WHO FOR -->
-  <section class="section section--tight" style="background:var(--bg-2);">
-    <div class="container">
+  <section class="section section--tight" style="position:relative; overflow:hidden;">
+    <div aria-hidden="true" style="position:absolute; inset:0; z-index:0;">
+      <img src="assets/gym-cables.jpg" alt="" style="width:100%; height:100%; object-fit:cover; object-position:center center;" />
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.72);"></div>
+    </div>
+    <div class="container" style="position:relative; z-index:1;">
       <p class="section__kicker reveal">Is This For You?</p>
       <h2 class="section__title reveal">Who this works for.</h2>
       <div class="fortwo reveal">
@@ -210,11 +214,6 @@
       </div>
     </div>
   </section>
-
-  <!-- BAND -->
-  <div class="band-image">
-    <img src="assets/gym-cables.jpg" alt="Darius training" loading="lazy" />
-  </div>
 
   <!-- WHY I COACH THIS WAY -->
   <section class="section section--tight">
