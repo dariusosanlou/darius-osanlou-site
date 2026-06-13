@@ -101,12 +101,20 @@
   </header>
 
   <!-- PAGE HERO -->
-  <section class="page-hero page-hero--wide">
-    <div class="container">
+  <section class="page-hero page-hero--wide" style="position:relative; overflow:hidden; min-height:65vh; display:flex; align-items:center;">
+    <div class="hero__bg" aria-hidden="true">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="assets/gym-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__video-overlay"></div>
+    </div>
+    <div class="container" style="position:relative; z-index:1; padding-top:80px; padding-bottom:80px;">
       <div class="page-hero__inner reveal">
         <p class="section__kicker">The Method</p>
         <h1>Body psychology.</h1>
       </div>
+      <p class="page-hero__lead reveal" style="margin-top:18px;">A coaching approach that treats the mind and body as one problem, not two separate ones.</p>
+      <p class="page-hero__lead reveal" style="margin-top:12px;">This isn't therapy, and it isn't a fitness plan. It sits between them and addresses the part that both usually miss.</p>
     </div>
   </section>
 
@@ -126,13 +134,6 @@
       </div>
     </div>
   </section>
-
-  <!-- FULL-BLEED IMAGE BAND -->
-  <div class="band-image">
-    <div class="img-slot" data-file="assets/method-band.jpg">
-      <span class="img-slot__label">Full-bleed coaching / training photo<br /><code>assets/method-band.jpg</code></span>
-    </div>
-  </div>
 
   <!-- FOUR PILLARS -->
   <section class="section">
