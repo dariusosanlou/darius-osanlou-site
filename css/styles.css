@@ -273,7 +273,7 @@ em { font-style: italic; color: var(--text); }
 .card:hover::before { opacity: 1; }
 .card__num { font-family: var(--display); font-weight: 800; font-size: 0.85rem; color: var(--accent-bright);
   letter-spacing: 0.1em; display: block; margin-bottom: 18px; }
-.card h3 { font-family: var(--display); font-weight: 800; font-size: 1.35rem; margin-bottom: 10px; letter-spacing: -0.01em; text-transform: uppercase; }
+.card h3 { font-family: var(--display); font-weight: 800; font-size: 1.15rem; margin-bottom: 10px; letter-spacing: -0.01em; text-transform: uppercase; }
 .card p { color: var(--text-dim); font-size: 0.98rem; }
 
 /* =========================================================
