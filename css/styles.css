@@ -540,6 +540,7 @@ em { font-style: italic; color: var(--text); }
   .hero__copy { text-align: left; min-width: 0; }
   .eyebrow { flex-wrap: wrap; }
   .hero__title { text-wrap: unset; overflow-wrap: break-word; font-size: clamp(1.75rem, 8.5vw, 2.3rem); }
+  .hero__line { display: block; }
   .hero__sub { font-size: 0.95rem; max-width: 100%; overflow-wrap: break-word; }
 
   .cards, .cards--3 { grid-template-columns: 1fr; }
