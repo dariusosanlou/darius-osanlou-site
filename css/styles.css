@@ -139,7 +139,7 @@ em { font-style: italic; color: var(--text); }
 /* =========================================================
    HERO (home)
    ========================================================= */
-.hero { position: relative; min-height: 100svh; display: flex; align-items: center; padding-top: var(--nav-h); overflow: hidden; }
+.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-start; padding-top: calc(var(--nav-h) + clamp(48px, 7vw, 96px)); overflow: hidden; }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
 .hero__bg::before {
   content: ""; position: absolute; width: 60vw; height: 60vw; max-width: 720px; max-height: 720px;
