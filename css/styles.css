@@ -243,7 +243,7 @@ em { font-style: italic; color: var(--text); }
 @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
 
 /* Mobile trust marquee + sticky CTA — hidden on desktop */
-.hero__trust-marquee { display: none; overflow: hidden; margin-top: 20px; }
+.hero__trust-marquee { display: block; overflow: hidden; margin-top: 20px; }
 .hero__trust-track {
   display: flex; gap: 20px; align-items: center; width: max-content;
   animation: scroll 16s linear infinite;
