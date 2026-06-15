@@ -149,7 +149,7 @@ em { font-style: italic; color: var(--text); }
 }
 .hero__bg::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 62%, var(--bg));
+  background: linear-gradient(180deg, transparent 78%, rgba(11,11,13,0.75));
 }
 .hero__inner {
   position: relative; z-index: 1;
@@ -553,8 +553,8 @@ em { font-style: italic; color: var(--text); }
 }
 .hero__video-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(105deg, var(--bg) 36%, transparent 68%),
-              linear-gradient(180deg, transparent 52%, var(--bg) 100%);
+  background: linear-gradient(105deg, rgba(11,11,13,0.55) 0%, transparent 50%),
+              linear-gradient(180deg, transparent 68%, rgba(11,11,13,0.6) 100%);
 }
 .hero__portrait {
   width: 100%; border-radius: var(--radius-lg);
