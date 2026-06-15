@@ -521,18 +521,25 @@ em { font-style: italic; color: var(--text); }
 }
 
 @media (max-width: 520px) {
+  /* Hero: shrink to content so no dead space, darken overlay for legibility */
+  .hero { min-height: auto; padding-top: calc(var(--nav-h) + 40px); padding-bottom: 56px; }
+  .hero__bg::after { background: linear-gradient(180deg, rgba(11,11,13,0.15) 0%, rgba(11,11,13,0.55) 55%, var(--bg) 100%); }
+
   .cards, .cards--3 { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr 1fr; }
   .transforms { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
   .screenshots { grid-template-columns: repeat(2, 1fr); }
-  .hero { min-height: auto; padding-block: calc(var(--nav-h) + 48px) 64px; }
-  .hero__bg::after { background: linear-gradient(180deg, rgba(11,11,13,0.35) 0%, rgba(11,11,13,0.6) 60%, var(--bg) 100%); }
-  .hero__cta .btn { width: 100%; justify-content: center; }
+
   .hero__cta { flex-direction: column; }
-  .footer__links { gap: 14px; }
+  .hero__cta .btn { width: 100%; justify-content: center; }
+
+  /* Typography */
   .section__title { overflow-wrap: break-word; }
   .page-hero h1 { font-size: clamp(1.9rem, 8vw, 6rem); overflow-wrap: break-word; }
   .service-card__title { font-size: 1.7rem; }
+
+  /* Footer */
+  .footer__links { gap: 14px; }
 }
 
 /* =========================================================
