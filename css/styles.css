@@ -242,8 +242,9 @@ em { font-style: italic; color: var(--text); }
 @keyframes scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
 
-/* Mobile trust marquee + sticky CTA — hidden on desktop */
-.hero__trust-marquee { display: block; overflow: hidden; margin-top: 20px; }
+/* Trust marquee — absolutely positioned at elbow level on both desktop and mobile */
+.hero__trust { display: none; }
+.hero__trust-marquee { display: block; overflow: hidden; position: absolute; left: 0; right: 0; bottom: 30%; margin-top: 0; }
 .hero__trust-track {
   display: flex; gap: 20px; align-items: center; width: max-content;
   animation: scroll 16s linear infinite;
