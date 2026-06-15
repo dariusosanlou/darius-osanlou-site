@@ -242,6 +242,17 @@ em { font-style: italic; color: var(--text); }
 @keyframes scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
 
+/* Mobile trust marquee + sticky CTA — hidden on desktop */
+.hero__trust-marquee { display: none; overflow: hidden; margin-top: 20px; }
+.hero__trust-track {
+  display: flex; gap: 20px; align-items: center; width: max-content;
+  animation: scroll 16s linear infinite;
+  font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap;
+}
+.hero__trust-track b { color: var(--accent-bright); font-weight: 700; }
+.hero__trust-track .trust-sep { color: var(--accent); }
+.mobile-cta { display: none; }
+
 /* =========================================================
    PROBLEM
    ========================================================= */
@@ -531,8 +542,22 @@ em { font-style: italic; color: var(--text); }
   .stats { grid-template-columns: 1fr 1fr; }
   .screenshots { grid-template-columns: repeat(2, 1fr); }
 
-  .hero__cta { flex-direction: column; }
-  .hero__cta .btn { width: 100%; justify-content: center; }
+  .hero__cta { display: none; }
+  .hero__trust { display: none; }
+  .hero__trust-marquee { display: block; }
+
+  .mobile-cta {
+    display: block;
+    position: fixed; bottom: 0; left: 0; right: 0;
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    background: rgba(11,11,13,0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border);
+    z-index: 200;
+  }
+  .mobile-cta .btn { display: block; width: 100%; text-align: center; }
 
   /* Typography */
   .section__title { overflow-wrap: break-word; }
