@@ -522,7 +522,7 @@ em { font-style: italic; color: var(--text); }
 
 @media (max-width: 520px) {
   /* Hero: full-screen image, content pinned to bottom */
-  .hero { min-height: 100svh; align-items: flex-end; padding-top: var(--nav-h); padding-bottom: 52px; }
+  .hero { min-height: 100svh; align-items: flex-start; padding-top: calc(var(--nav-h) + 32px); padding-bottom: 52px; }
   .hero__bg::after { background: linear-gradient(180deg, transparent 30%, rgba(11,11,13,0.6) 65%, var(--bg) 100%); }
   .hero .hero__bg img { object-position: center 65% !important; }
   .hero__trust { display: none; }
