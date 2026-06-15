@@ -536,11 +536,11 @@ em { font-style: italic; color: var(--text); }
   .hero { min-height: 100svh; align-items: flex-start; padding-top: calc(var(--nav-h) + 32px); padding-bottom: 52px; }
   .hero__bg::after { background: linear-gradient(180deg, transparent 55%, rgba(11,11,13,0.5) 85%, rgba(11,11,13,0.75) 100%); }
   .hero .hero__bg img { object-position: center 30% !important; }
-  .hero__inner { padding-block: 0; }
-  .hero__copy { text-align: left; }
+  .hero__inner { padding-block: 0; min-width: 0; overflow: hidden; }
+  .hero__copy { text-align: left; min-width: 0; }
   .eyebrow { flex-wrap: wrap; }
-  .hero__title { text-wrap: unset; overflow-wrap: break-word; }
-  .hero__sub { font-size: 1rem; max-width: 100%; }
+  .hero__title { text-wrap: unset; overflow-wrap: break-word; font-size: clamp(1.75rem, 8.5vw, 2.3rem); }
+  .hero__sub { font-size: 0.95rem; max-width: 100%; overflow-wrap: break-word; }
 
   .cards, .cards--3 { grid-template-columns: 1fr; }
   .transforms { grid-template-columns: 1fr; }
