@@ -512,7 +512,7 @@ em { font-style: italic; color: var(--text); }
   .about__media { position: static; max-width: 380px; }
   .about-video { aspect-ratio: 4/5; }
   .stats { grid-template-columns: repeat(2, 1fr); }
-  .transforms { grid-template-columns: 1fr; max-width: 360px; margin-inline: auto; }
+  .transforms { grid-template-columns: repeat(2, 1fr); }
   .testimonials { grid-template-columns: 1fr; }
   .screenshots { grid-template-columns: repeat(2, 1fr); }
   .applyform { grid-template-columns: 1fr; }
@@ -523,8 +523,14 @@ em { font-style: italic; color: var(--text); }
 @media (max-width: 520px) {
   .cards, .cards--3 { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
-  .hero__cta .btn { width: 100%; }
+  .transforms { grid-template-columns: 1fr; }
+  .screenshots { grid-template-columns: repeat(2, 1fr); }
+  .hero__cta .btn { width: 100%; justify-content: center; }
   .hero__cta { flex-direction: column; }
+  .footer__links { gap: 14px; }
+  .section__title { overflow-wrap: break-word; }
+  .page-hero h1 { font-size: clamp(1.9rem, 8vw, 6rem); overflow-wrap: break-word; }
+  .service-card__title { font-size: 1.7rem; }
 }
 
 /* =========================================================
