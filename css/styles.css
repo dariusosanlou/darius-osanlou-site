@@ -525,6 +525,8 @@ em { font-style: italic; color: var(--text); }
   .stats { grid-template-columns: 1fr 1fr; }
   .transforms { grid-template-columns: 1fr; }
   .screenshots { grid-template-columns: repeat(2, 1fr); }
+  .hero { align-items: flex-start; }
+  .hero__inner { padding-top: clamp(32px, 8vw, 56px); }
   .hero__cta .btn { width: 100%; justify-content: center; }
   .hero__cta { flex-direction: column; }
   .footer__links { gap: 14px; }
