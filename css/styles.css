@@ -525,8 +525,8 @@ em { font-style: italic; color: var(--text); }
   .stats { grid-template-columns: 1fr 1fr; }
   .transforms { grid-template-columns: 1fr; }
   .screenshots { grid-template-columns: repeat(2, 1fr); }
-  .hero { align-items: flex-start; }
-  .hero__inner { padding-top: clamp(32px, 8vw, 56px); }
+  .hero { min-height: auto; padding-block: calc(var(--nav-h) + 48px) 64px; }
+  .hero__bg::after { background: linear-gradient(180deg, rgba(11,11,13,0.35) 0%, rgba(11,11,13,0.6) 60%, var(--bg) 100%); }
   .hero__cta .btn { width: 100%; justify-content: center; }
   .hero__cta { flex-direction: column; }
   .footer__links { gap: 14px; }
