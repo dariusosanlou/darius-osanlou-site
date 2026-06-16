@@ -368,6 +368,7 @@ em { font-style: italic; color: var(--text); }
    ABOUT
    ========================================================= */
 .about__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+.about__grid--featured { grid-template-columns: 1fr 1fr; gap: clamp(48px, 7vw, 96px); align-items: center; }
 .about__media { position: sticky; top: 100px; }
 .about-video { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); display: block; }
 .about__copy p { color: var(--text-dim); margin-bottom: 1em; font-size: 1.05rem; max-width: 56ch; text-transform: none; }
@@ -521,7 +522,9 @@ em { font-style: italic; color: var(--text); }
   .coaching__head, .coaching__body { grid-template-columns: 1fr; }
   .fortwo { grid-template-columns: 1fr; }
   .about__grid { grid-template-columns: 1fr; }
+  .about__grid--featured { grid-template-columns: 1fr; }
   .about__media { position: static; max-width: 380px; }
+  .about__grid--featured .about__media { max-width: none; }
   .about-video { aspect-ratio: 4/5; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .transforms { grid-template-columns: repeat(2, 1fr); }
