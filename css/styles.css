@@ -118,8 +118,9 @@ em { font-style: italic; color: var(--text); }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .nav__logo {
   font-family: var(--display); font-weight: 900; font-size: 1.2rem; letter-spacing: 0.02em;
-  text-transform: uppercase; display: flex; flex-direction: column; line-height: 1;
+  text-transform: uppercase; display: flex; flex-direction: row; align-items: center; gap: 10px; line-height: 1;
 }
+.nav__logo-text { display: flex; flex-direction: column; }
 .nav__logo-sub { font-size: 0.56rem; font-weight: 600; letter-spacing: 0.24em; color: var(--muted); margin-top: 5px; }
 .nav__links { display: flex; align-items: center; gap: clamp(16px, 2.2vw, 32px); }
 .nav__links a {
