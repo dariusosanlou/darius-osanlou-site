@@ -541,7 +541,7 @@ em { font-style: italic; color: var(--text); }
 
 @media (max-width: 520px) {
   /* Hero: full-screen image, content pinned to bottom */
-  .hero { min-height: 100svh; align-items: flex-start; padding-top: calc(var(--nav-h) + 32px); padding-bottom: 52px; }
+  .hero { min-height: 85svh; align-items: flex-start; padding-top: calc(var(--nav-h) + 32px); padding-bottom: 52px; }
   .hero__bg::after { background: linear-gradient(180deg, transparent 55%, rgba(11,11,13,0.5) 85%, rgba(11,11,13,0.75) 100%); }
   .hero .hero__bg img { object-position: center 30% !important; }
   .hero__inner { padding-block: 0; min-width: 0; }
