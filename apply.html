@@ -111,12 +111,14 @@
       <div class="applyform">
         <div class="applyform__intro reveal">
           <p>A few short questions so our first conversation is useful rather than generic. Takes about two minutes.</p>
-          <p>Prefer to reach out directly? Find me on <a class="accent" href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener">Instagram</a>.</p>
+          <p>Prefer to reach out directly? Find me on <a class="accent" href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
         </div>
 
         <form class="applyform__form reveal" action="https://formspree.io/f/xojzkwzp" method="POST">
           <input type="hidden" name="_subject" value="New coaching application - dariusosanlou.com" />
           <input type="hidden" name="_next" value="https://www.dariusosanlou.com/" />
+          <!-- honeypot: bots fill this, humans don't -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="field">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" autocomplete="name" required />
@@ -179,7 +181,7 @@
         <a href="nutrition-coaching.html">Nutrition</a>
         <a href="blog/index.html">Blog</a>
         <a href="apply.html">Apply</a>
-        <a href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.instagram.com/darius_osanlou/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
       </nav>
       <p class="footer__copy">© <span id="year">2026</span> Darius Osanlou. All rights reserved.</p>
     </div>
