@@ -46,6 +46,20 @@
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
+  /* --- Hero video: desktop only, mobile keeps the static photo --- */
+  var heroVideo = document.getElementById("heroVideo");
+  if (heroVideo && window.matchMedia("(min-width: 901px)").matches) {
+    var source = document.createElement("source");
+    source.src = "assets/hero.mp4";
+    source.type = "video/mp4";
+    heroVideo.appendChild(source);
+    heroVideo.load();
+    heroVideo.style.display = "block";
+    var heroPhoto = document.querySelector(".hero__bg-photo");
+    if (heroPhoto) heroPhoto.style.display = "none";
+    heroVideo.play().catch(function () {});
+  }
+
   /* --- Current year --- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
